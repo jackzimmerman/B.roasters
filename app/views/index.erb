@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<title>B.roasters Coffee</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url(http://astorplace.nyc/sites/default/files/styles/slideshow/public/13668678_986607668124829_933474641983970300_o_1.jpg?itok=2doyC1nH);
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo">
+    <p align = "center">B. roasters</p>
+    <p align = "center">Coffee Company</p>
+  </div>
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    
+    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">menu</button></p>
+    <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black">contact</button></p>
+  </div>
+  <div class="w3-display-bottomleft w3-container">
+    <p class="w3-xlarge">Open Monday-Friday 5:30AM-9:00PM</p>
+    <p class="w3-xlarge">Open Weekends 8:00AM-6:00PM</p>
+    <p class="w3-large">New Rochelle Train Station</p>
+    <p>powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </div>
+</div>
+
+<!-- Menu Modal -->
+<div id="menu" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Coffees</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Drip Coffee <b>$2.50</b></h5>
+      <h5>Cold Brew <b>$3.50</b></h5>
+      <h5>Espresso <b>$1.00</b></h5>
+      <h5>Cappuccino<b>$4.00</b></h5>
+      <h5>Flat White <b>$3.50</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Teas</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Black Tea <b>$2.00</b></h5>
+      <h5>Green Tea <b>$2.00</b></h5>
+      <h5>Peppermint Tea <b>$2.00</b></h5>
+      <h5>Chai Green Tea <b>$2.50</b></h5>
+     
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Other Drinks</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Fruit Smoothie <b>$2.50</b></h5>
+     
+    </div>
+  </div>
+</div>
+
+<!-- Contact Modal -->
+<div id="contact" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Contact</h1>
+    </div>
+    <div class="w3-container">
+      
+      <p>Please put the time of your train, and we will prepare the coffee 3 minutes before your train</p>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Train Time" required name="date"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+        <p><button class="w3-button" type="submit">SEND MESSAGE</button></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
